@@ -26,24 +26,20 @@ void removeDupWord(char str[])
     {
         hash_size=vs.size();
         int r=radix(vs[i]);
-     //   cout<<r<<endl;
+        cout<<r<<endl;
         vrad[r]++;
-      //  cout<<"v[r] "<<vrad[r];
+        cout<<"v[r] "<<vrad[r];
         vst[r]=vs[i];
-       // cout<<" vs "<<vst[r]<<endl;
+        cout<<" vs "<<vst[r]<<endl;
     }
-    int cnt=0;
     for(int i=0; i<hash_size; i++)
     {
-
         if(vrad[i]!=0)
         {
-            cnt++;
-           // cout<<vst[i]<<" "<<vrad[i]<<endl;
+            cout<<vst[i]<<" "<<vrad[i]<<endl;
         }
 
     }
-    cout<<"UNIque: "<<cnt;
 }
 int main()
 {
@@ -53,3 +49,4 @@ int main()
     removeDupWord(str);
     return 0;
 }
+
